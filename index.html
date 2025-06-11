@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hands Canva</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toolbar">
+      <div class="tool red" data-color="red" data-label="Red"></div>
+      <div class="tool blue" data-color="blue" data-label="Blue"></div>
+      <div class="tool yellow" data-color="yellow" data-label="Yellow"></div>
+      <div class="tool green" data-color="green" data-label="Green"></div>
+      <div class="tool eraser" data-eraser="true" data-label="Delete">
+        DELETE
+      </div>
+    </div>
+
+    <video
+      id="video"
+      autoplay
+      playsinline
+      muted
+      width="640"
+      height="480"
+      style="display: none"
+    ></video>
+    <canvas id="canvasCamera" width="640" height="480"></canvas>
+    <canvas id="canvasDraw" width="640" height="480"></canvas>
+
+    <script src="./libraries/hands.js"></script>
+    <script src="./libraries/camera_utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -2,13 +2,21 @@
 
 **hands-canva** is an interactive web application that lets you **draw in the air using your hands** through your device's camera — no mouse, stylus, or touchscreen required.
 
-Using real-time hand tracking powered by **MediaPipe**, you can change colors, erase the canvas, and adjust brush thickness — all with hand gestures.
+Using real-time hand tracking powered by **MediaPipe**, you can change colors and erase the canvas — all with hand gestures.
 
 ---
 
 ## ✨ Live Demo
 
 👉 [View live demo on GitHub Pages](https://jeysonvillalobos.github.io/hands-canva/)
+
+---
+
+## ✨ Video Demo
+
+
+https://github.com/user-attachments/assets/3199bd5e-ecdc-4a99-a791-98660e006cd6
+
 
 ---
 

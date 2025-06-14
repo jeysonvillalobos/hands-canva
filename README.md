@@ -15,7 +15,8 @@ Using real-time hand tracking powered by **MediaPipe**, you can change colors an
 ## ✨ Video Demo
 
 
-https://github.com/user-attachments/assets/3199bd5e-ecdc-4a99-a791-98660e006cd6
+https://github.com/user-attachments/assets/d69850b1-3d5a-41b0-ac8f-3cf95c9c0b62
+
 
 
 ---

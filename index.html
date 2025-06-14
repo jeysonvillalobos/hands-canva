@@ -3,31 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hands Canva</title>
+    <title>Hands Canvas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="toolbar">
-      <div class="tool red" data-color="red" data-label="Red"></div>
-      <div class="tool blue" data-color="blue" data-label="Blue"></div>
-      <div class="tool yellow" data-color="yellow" data-label="Yellow"></div>
-      <div class="tool green" data-color="green" data-label="Green"></div>
-      <div class="tool eraser" data-eraser="true" data-label="Delete">
-        DELETE
+    <div class="container">
+      <video
+        id="video"
+        autoplay
+        playsinline
+        muted
+        width="800"
+        height="600"
+        style="display: none"
+      ></video>
+      <canvas id="canvasCamera" width="800" height="600"></canvas>
+      <canvas id="canvasDraw" width="800" height="600"></canvas>
+
+      <div id="toolbar">
+        <div class="tool color-tool red-bg" data-color="red" data-label="Rojo"></div>
+        <div class="tool color-tool blue-bg" data-color="blue" data-label="Azul"></div>
+        <div class="tool color-tool yellow-bg" data-color="yellow" data-label="Amarillo"></div>
+        <div class="tool color-tool green-bg" data-color="green" data-label="Verde"></div>
+        
+        <div class="tool eraser-tool" data-eraser="true" data-label="Borrar Todo">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-trash-2"
+            >
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+            </svg>
+        </div>
+
+        <div class="tool text-tool" data-text-label="By Jeyson Villalobos" data-label="Texto">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-type"
+            >
+                <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                <line x1="9" y1="20" x2="15" y2="20"></line>
+                <line x1="12" y1="4" x2="12" y2="20"></line>
+            </svg>
+        </div>
       </div>
     </div>
-
-    <video
-      id="video"
-      autoplay
-      playsinline
-      muted
-      width="640"
-      height="480"
-      style="display: none"
-    ></video>
-    <canvas id="canvasCamera" width="640" height="480"></canvas>
-    <canvas id="canvasDraw" width="640" height="480"></canvas>
 
     <script src="./libraries/hands.js"></script>
     <script src="./libraries/camera_utils.js"></script>
